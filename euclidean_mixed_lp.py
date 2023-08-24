@@ -609,8 +609,8 @@ def train_model(dic, model_name, data, data_name, num_layer, d, lr, config):
       model_weights.append(best_model.state_dict())
       aucs.append(tuple(best_results))
   # save 10 trials in one file
-  # torch.save(model_weights, model_name + "/models/" + filename)
-  # torch.save(aucs, model_name + "/results/" + filename)
+  torch.save(model_weights, model_name + "/models/" + filename)
+  torch.save(aucs, model_name + "/results/" + filename)
 
 for model_name in model_names:
   for data_name, data in datasets.items():
@@ -635,4 +635,4 @@ for model_name in model_names:
         for lr in learning_rates:
           train_model(dic, model_name, data, data_name, num_layer, d, lr, config)
           config += 1
-    # export_dict(data_name,model_name,dic)
+    export_dict(data_name,model_name,dic)
