@@ -654,8 +654,8 @@ def train_model(dic, model_name, data, data_name, num_layer, d, lr, config):
       accs.append(tuple(best_results))
       print("Best val accuracy =", str(best_val_acc), ", at epoch", str(best_epoch))
   # save 10 trials in one file
-  # torch.save(model_weights, model_name + "/models/" + filename)
-  # torch.save(accs, model_name + "/results/" + filename)
+  torch.save(model_weights, model_name + "/models/" + filename)
+  torch.save(accs, model_name + "/results/" + filename)
 
 for data_name, data in datasets.items():
   device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -674,4 +674,4 @@ for data_name, data in datasets.items():
         for lr in learning_rates:
           train_model(dic, model_name, data, data_name, num_layer, d, lr, config)
           config += 1
-    # export_dict(data_name,model_name,dic)
+    export_dict(data_name,model_name,dic)
