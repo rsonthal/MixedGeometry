@@ -1,0 +1,83 @@
+{
+"AirportBrazil": {
+"GCN": 6.76,
+"GC": 5.52,
+"GAT": 11.29,
+"HGCN": 12.38,
+"HGC": 15.77,
+"HGAT": 17.47,
+"LGCN": 14.85
+},
+"AirportEurope": {
+"GCN": 7.32,
+"GC": 6.2,
+"GAT": 12.6,
+"HGCN": 12.75,
+"HGC": 16.09,
+"HGAT": 17.9,
+"LGCN": 14.87
+},
+"AirportUSA": {
+"GCN": 7.55,
+"GC": 6.26,
+"GAT": 13.54,
+"HGCN": 12.98,
+"HGC": 16.13,
+"HGAT": 18.66,
+"LGCN": 15.01
+},
+"CiteSeer": {
+"GCN": 8.77,
+"GC": 7.47,
+"GAT": 15.5,
+"HGCN": 15.11,
+"HGC": 19.02,
+"HGAT": 21.66,
+"LGCN": 21.46
+},
+"Cora": {
+"GCN": 8.71,
+"GC": 7.25,
+"GAT": 14.43,
+"HGCN": 15.1,
+"HGC": 17.77,
+"HGAT": 21.8,
+"LGCN": 17.0
+},
+"PubMed": {
+"GCN": 86.67,
+"GC": 58.54,
+"GAT": 0,
+"HGCN": 90.97,
+"HGC": 65.31,
+"HGAT": 0,
+"LGCN": 80.21
+},
+"WebKB-Cornell": {
+"GCN": 7.2,
+"GC": 6.02,
+"GAT": 12.0,
+"HGCN": 12.93,
+"HGC": 16.43,
+"HGAT": 17.47,
+"LGCN": 14.55
+},
+"WebKB-Texas": {
+"GCN": 7.2,
+"GC": 6.11,
+"GAT": 12.21,
+"HGCN": 12.57,
+"HGC": 16.08,
+"HGAT": 17.28,
+"LGCN": 14.95
+},
+"WebKB-Wisconsin": {
+"GCN": 7.6,
+"GC": 6.15,
+"GAT": 12.18,
+"HGCN": 12.72,
+"HGC": 16.11,
+"HGAT": 17.54,
+"LGCN": 14.59
+}
+}
