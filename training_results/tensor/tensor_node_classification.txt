@@ -1,0 +1,98 @@
+
+This tensor contains the accuracies at each epoch for all node classification experiments ran.
+The tensor has the following dimensions:
+
+1. Dataset (9)
+2. Models (9)
+3. Hyper-parameter configuration (36)
+4. Trials (10)
+5. Epochs (100)
+6. Accuracy type (3)
+
+-----------------------------------------------------
+
+1. Dataset: There are 9 datasets. The mapping is:
+
+datasets = {
+    'AirportBrazil': 0,
+    'AirportEurope': 1,
+    'AirportUSA': 2,
+    'CiteSeer': 3,
+    'Cora': 4,
+    'PubMed': 5,
+    'WebKB-Cornell': 6,
+    'WebKB-Texas': 7,
+    'WebKB-Wisconsin': 8
+}
+
+
+
+2. Models: There are 9 models. The mapping is:
+
+models = {
+    'GAT': 0,
+    'GC': 1,
+    'GCN': 2,
+    'HGAT': 3,
+    'HGC': 4,
+    'HGCN': 5,
+    'HGNN': 6,
+    'HyboNet': 7,
+    'LGCN': 8
+}
+
+
+
+3. Hyper-parameter configuration. The mapping is:
+
+{0: [2, 32, 0.0002],
+ 1: [2, 32, 0.001],
+ 2: [2, 32, 0.005],
+ 3: [2, 64, 0.0002],
+ 4: [2, 64, 0.001],
+ 5: [2, 64, 0.005],
+ 6: [2, 128, 0.0002],
+ 7: [2, 128, 0.001],
+ 8: [2, 128, 0.005],
+ 9: [2, 256, 0.0002],
+ 10: [2, 256, 0.001],
+ 11: [2, 256, 0.005],
+ 12: [3, 32, 0.0002],
+ 13: [3, 32, 0.001],
+ 14: [3, 32, 0.005],
+ 15: [3, 64, 0.0002],
+ 16: [3, 64, 0.001],
+ 17: [3, 64, 0.005],
+ 18: [3, 128, 0.0002],
+ 19: [3, 128, 0.001],
+ 20: [3, 128, 0.005],
+ 21: [3, 256, 0.0002],
+ 22: [3, 256, 0.001],
+ 23: [3, 256, 0.005],
+ 24: [4, 32, 0.0002],
+ 25: [4, 32, 0.001],
+ 26: [4, 32, 0.005],
+ 27: [4, 64, 0.0002],
+ 28: [4, 64, 0.001],
+ 29: [4, 64, 0.005],
+ 30: [4, 128, 0.0002],
+ 31: [4, 128, 0.001],
+ 32: [4, 128, 0.005],
+ 33: [4, 256, 0.0002],
+ 34: [4, 256, 0.001],
+ 35: [4, 256, 0.005]}
+
+
+
+4. Trial: There are 10 trials. To access the n-th trial, index by tensor[x][x][x][n-1][x][x]
+
+
+5. Epoch: There are 100 epochs. Similarly, to access the n-th epoch, index by tensor[x][x][x][x][n-1][x]
+
+
+6. Accuracy type: There are test, train, and val accs stored in that order -
+tensor[x][x][x][x][x][0] gives test acc
+tensor[x][x][x][x][x][1] gives train acc
+tensor[x][x][x][x][x][2] gives val acc
+
+
